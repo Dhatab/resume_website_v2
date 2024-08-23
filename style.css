@@ -528,13 +528,6 @@ span{
     overflow: hidden;
 }
 
-.certification-container .certification-box:hover{
-    box-shadow: 0 .1rem 2rem var(--shadow-color);
-    transform: scale(1.02);
-}
-
-
-
 .certification-content .certification-slide{
     display: flex;
     align-items: center;
@@ -547,6 +540,11 @@ span{
     border-bottom: .2rem solid var(--main-color);
     border-left: .2rem solid var(--main-color);
     border-right: .2rem solid var(--main-color);
+}
+
+.certification-content .certification-slide:hover {
+    box-shadow: 0 .1rem 2rem var(--shadow-color);
+    transform: scale(1.02);
 }
 
 .certification-slide img{
