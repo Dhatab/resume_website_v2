@@ -239,22 +239,19 @@ section{
 
 .home .profession-box .profession {
     position: absolute;
-    left: 0;
+    left: -20px;
     display: flex;
     align-items: center;
-    justify-content: center; /* Ensure horizontal centering */
     flex-direction: column;
     color: var(--main-color);
     transform: rotate(calc(360deg / 4 * var(--i)));
     transform-origin: 384px;
     background: var(--bg-color);
-    padding: 6px; /* Remove padding */
-    padding-top: 12px;
-    width: 228px; /* Set a fixed width for consistency */
-    text-align: center; /* Center the text */
+    padding: 13px 0;
+    max-width: 260px;
+    width: 100%;
+    text-align: center;
 }
-
-
 
 .home .profession-box .profession h3 {
     font-size: 3.2rem;
@@ -837,12 +834,7 @@ span{
         width: 100%;
     }
 
-    .home .profession-box .profession{
-        padding: 0 13px;
-        left: auto;
-        transform-origin: 0;
-        background: transparent;
-    }
+   
 
     .home .profession-box .profession:nth-child(1){
         transform: rotate(-90deg) translate(-120px, -210px);
