@@ -72,6 +72,26 @@ darkModeIcon.onclick = () => {
   document.body.classList.toggle('dark-mode');
 };
 
+/*=====modal======*/
+function openModal(imageSrc) {
+  var modal = document.getElementById('modal');
+  var modalImg = document.getElementById('modal-image');
+
+  // Set the source of the modal image to the provided image source
+  modalImg.src = imageSrc;
+
+  // Display the modal
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  var modal = document.getElementById('modal');
+  modal.style.display = "none";
+}
+
+
+
+
 /*=====scroll reveal======*/
 ScrollReveal({
   //reset:true,
@@ -84,7 +104,7 @@ ScrollReveal().reveal('.home-content, .heading', {
   origin: 'top'
 });
 
-ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form', {
+ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .certification-wrapper', {
   origin: 'bottom'
 });
 

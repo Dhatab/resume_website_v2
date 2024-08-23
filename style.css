@@ -42,6 +42,8 @@ body{
     transition: .5s ease;
 }
 
+/* HEADER */
+
 .header{
     position: fixed;
     top: 0;
@@ -121,6 +123,8 @@ section{
     padding: 10rem 7% 2rem;
 }
 
+/* HOME */
+
 .home{
     display: flex;
     align-items: center;
@@ -142,7 +146,6 @@ section{
     margin-bottom: 0;
 }
 
-
 .home-content .social-media a{
     display: inline-flex;
     justify-content: center;
@@ -158,22 +161,25 @@ section{
     margin: 0rem 1rem 2rem 0;
 }
 
+
+
 .home-content .social-media a:hover{
     background: var(--main-color);
     color: var(--white-color);
 }
 
 
+
 .btn{
     display: inline-block;
-    padding: 1.2rem 2.8rem;
+    padding: .5rem 1rem;
     background: var(--main-color);
     border-radius: 10px;
     box-shadow: 0 .2rem .5rem var(--shadow-color);
     font-size: 1.7rem;
     color: var(--white-color);
     letter-spacing: .1rem;
-    font-weight: 600;
+    font-weight: 500;
     border: .2rem solid transparent;
     transition: .5s ease;
 }
@@ -316,6 +322,8 @@ span{
     color: var(--main-color);
 }
 
+/* ABOUT */
+
 .about{
     display: flex;
     justify-content: center;
@@ -323,10 +331,13 @@ span{
     gap: 4rem;
 }
 
-.about-img img{
-    width: 25vw;
-    border-radius: 50px;
+.about-img img {
+    width: 20vw;
     padding-top: 2rem;
+    border-bottom-left-radius: 15rem;
+    border-top-right-radius: 15rem;
+    border: 5px solid var(--main-color); /* Adjust border width and color */
+
 }
 
 .heading{
@@ -348,6 +359,8 @@ span{
     margin: 2rem 0 3rem;
     text-align: justify;
 }
+
+/* EXPERIENCE */
 
 .experience h2{
     margin-bottom: 5rem;
@@ -405,6 +418,8 @@ span{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+
+/* PORTFOLIO */
 
 .portfolio{
     padding: 10rem 5rem;
@@ -485,7 +500,13 @@ span{
     color: #333;
 }
 
-.testimonial-container{
+.portfolio-container .heading{
+    padding-bottom: 1rem;
+}
+
+
+/* CERTIFICATION */
+.certification-container{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -493,24 +514,28 @@ span{
     padding: 5rem 5rem;
 }
 
-.portfolio-container .heading{
-    padding-bottom: 1rem;
-}
-
-.testimonial-container .testimonial-wrapper{
+.certification-container .certification-wrapper{
     position: relative;
-    max-width: 90rem;
+    max-width: 50rem;
     width: 100%;
     padding: 4rem;
 }
 
-.testimonial-wrapper .testimonial-box{
+
+.certification-wrapper .certification-box{
     padding: 1rem;
     border-radius: 2rem;
     overflow: hidden;
 }
 
-.testimonial-content .testimonial-slide{
+.certification-container .certification-box:hover{
+    box-shadow: 0 .1rem 2rem var(--shadow-color);
+    transform: scale(1.02);
+}
+
+
+
+.certification-content .certification-slide{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -524,97 +549,52 @@ span{
     border-right: .2rem solid var(--main-color);
 }
 
-.testimonial-slide img{
-    width: 14rem;
-    height: 14rem;
+.certification-slide img{
+    width: 20rem;
+    height: 20rem;
     object-fit: cover;
-    border-radius: 50%;
-    border: .5rem solid var(--bg-color);
-    outline: .5rem solid var(--main-color);
 }
 
-.testimonial-slide h3{
+.certification-slide h3{
     font-size: 2.5rem;
     margin: 2rem 0;
+    text-align: center;
 }
 
-.testimonial-slide p{
+.certification-slide p{
     font-size: 1.4rem;
     text-align: center;
 }
 
-.testimonial-box .swiper-button-next,
-.testimonial-box .swiper-button-prev{
+.certification-box .swiper-button-next,
+.certification-box .swiper-button-prev{
     color: var(--main-color);
 }
 
-.testimonial-box .swiper-button-next{
+.certification-box .swiper-button-next{
     right: 0;
 }
 
-.testimonial-box .swiper-button-prev{
+.certification-box .swiper-button-prev{
     left: 0;
 }
 
-.testimonial-box .swiper-pagination-bullet{
+.certification-box .swiper-pagination-bullet{
     background: rgba(0, 0, 0, .8);
 }
 
-.testimonial-box .swiper-pagination-bullet-active{
+.certification-box .swiper-pagination-bullet-active{
     background: var(--main-color)
 }
 
-.contact{
-    padding: 10rem 5rem;
+.certification-container,
+.certification-container * {
+    cursor: default;
 }
 
-.contact h2{
-    margin-bottom: 2rem;
-}
 
-.contact form{
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact form .input-box{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea{
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--bg-color);
-    border-radius: .8rem;
-    margin: .7rem 0;
-    border-top: .2rem solid var(--main-color);
-    border-bottom: .2rem solid var(--main-color);
-    border-left: .2rem solid var(--main-color);
-    border-right: .2rem solid var(--main-color);
-}
-
-.contact form .input-box input{
-    width: 49%;
-}
-
-.contact form textarea{
-    resize: none;
-    width: 100%;
-    height: 20rem;
-}
-
-.contact form .btn{
-    margin-top: 2rem;
-    cursor: pointer;
-}
-
+ /* FOOTER  */
+ 
 .footer {
     display: flex;
     justify-content: space-between;
@@ -650,7 +630,53 @@ span{
     color: #333;
 }
 
-
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+  }
+  
+  .modal-content {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Center the image inside the modal */
+  .modal-content {
+    display: block;
+    margin: 5% auto;
+    max-width: 100%;
+  }
+  
+  /* Optional: Add Animation */
+  .modal-content, .close {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
 
 
 
@@ -726,9 +752,6 @@ span{
         padding-bottom: 7rem;
     }
 
-    .contact{
-        min-height: auto;
-    }
 
     .footer {
         padding: 2rem 3%;
@@ -882,16 +905,16 @@ span{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .testimonial-container .testimonial-wrapper {
+    .certification-container .certification-wrapper {
         padding: 5rem 0;
     }
 
-    .testimonial-content .testimonial-slide{
+    .certification-content .certification-slide{
         padding: 3rem 2rem;
     }
 
-    .testimonial-box .swiper-button-next,
-    .testimonial-box .swiper-button-prev{
+    .certification-box .swiper-button-next,
+    .certification-box .swiper-button-prev{
         display: none;
     }
 
@@ -962,14 +985,10 @@ span{
         display: none;
     }
 
-    .contact form .input-box input{
-        width: 100%;
-    }
 
     .experience,
     .portfolio,
-    .testimonial-container,
-    .contact{
+    .certification-container{
         padding: 6rem;    
     }
 
