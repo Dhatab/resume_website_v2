@@ -35,8 +35,9 @@
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
-        <a href="#portfolio">Portfolio</a>
         <a href="#certification">Certifications</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
       </nav>
 
       <div class="bx bx-moon" id="darkMode-icon"></div>
@@ -47,7 +48,7 @@
     <section class="home" id="home">
       <div class="home-content">
         <h3>Hello, I am</h3>
-        <h1>Dan Hatab</h1>
+        <h1>Dan Hatab!</h1>
 
         <div class="social-media">
           <a href="https://github.com/dhatab" target="_blank">
@@ -111,43 +112,142 @@
           adept problem-solving abilities, and quick decision-making to drive project success 
           and support my team's achievements.
     </section>
-
-    <!--service section-->
-    <section class="experience" id="experience">
+    
+    <!-- experience section -->
+    <section class="experience" id="experience">  
       <h2 class="heading">My <span>Experience</span></h2>
-
-      <div class="experience-container">
-        <div class="experience-box">
-          <i class="bx bx-code-alt"></i>
-          <h3>Web Development</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
-            placeat quas velit adipisci iusto labore, cupiditate asperiores
-            dolor dolore quam!
-          </p>
-          <a href="#" class="btn">Read More</a>
+      <div class="timeline">
+        <div class="experience_container left-container">
+          <img src="assets/ramapo.png" alt="">
+          <div class="experience_textbox">
+            <h2>Ramapo Communication Corp</h2>
+            <h3>Sr. Project Manager</h3>
+            <small>Apr. 2018- Jan. 2024</small>
+            <p>Whatever</p>
+            <span class="left-container-arrow"></span>
+          </div>
         </div>
 
-        <div class="experience-box">
+        <div class="experience_container right-container">
+          <img src="assets/ramapo.png" alt="">
+          <div class="experience_textbox">
+            <h2>Ramapo Communication Corp</h2>
+            <h3>Assistant Project Manager </h3>
+            <small>Aug. 2016- Apr. 2018</small>
+            <p>Whatever</p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </div>
+
+        <div class="experience_container left-container">
+          <img src="assets/amazix.png" alt="">
+          <div class="experience_textbox">
+            <h2>Amazix</h2>
+            <h3>Community Manager</h3>
+            <small>June 2017- Oct. 2017</small>
+            <p>Whatever</p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </div>
+
+        <div class="experience_container right-container">
+          <img src="assets/heycoinbot.png" alt="">
+          <div class="experience_textbox">
+            <h2>HeyCoinBot</h2>
+            <h3>Android Develop</h3>
+            <small>Feb. 2016 - July 2016</small>
+            <p>Whatever</p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </div>
+
+        <div class="experience_container left-container">
+          <img src="assets/wvu.png" alt="">
+          <div class="experience_textbox">
+            <h2>West Virginia University</h2>
+            <h3>Bachelor of Science in Aerospace Engineering</h3>
+            <small>Jan. 2011- Dec. 2015</small>
+            <p>Whatever</p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--certification section-->
+    <section class="certification" id="certification">
+      <h2 class="heading">My <span>Certifications</span></h2>
+      <div class="certification-container">
+        <div class="certification-wrapper">
+          <div class="certification-box mySwiper">
+            <div class="certification-content swiper-wrapper">
+              <div class="certification-slide swiper-slide">
+                <img
+                  id="pmp-details"
+                  src="assets/pmp.png"
+                  alt="PMP Certificate"
+                />
+                <h3>Project Management Professional</h3>
+                <button class="btn" onclick="openModal('assets/pmp_cert.png')">
+                  View More
+                </button>
+              </div>
+
+              <div class="certification-slide swiper-slide">
+                <img
+                  id="csm-details"
+                  src="assets/csm.png"
+                  alt="CSM Certificate"
+                />
+                <h3>Certified Scrum Master</h3>
+                <button class="btn" onclick="openModal('assets/csm_cert.png')">
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--skills section-->
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+
+      <div class="skills-container">
+        <div class="skills-box">
+          <i class='bx bx-list-ul'></i>
+          <h3>Management</h3>
+          <p>
+            Expertise in leading teams, managing resources, and mitigating risks to deliver high-quality results on 
+            time and within budget. Focused on effective communication, stakeholder engagement, 
+            and adaptive problem-solving to drive organizational growth and client satisfaction.
+          </p>
+        </div>
+
+        <div class="skills-box">
           <i class="bx bx-bar-chart-alt"></i>
-          <h3>Digital Marketing</h3>
+          <h3>Methodoliges</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
-            placeat quas velit adipisci iusto labore, cupiditate asperiores
-            dolor dolore quam!
+            Experienced in both traditional and agile methodologies, 
+            effectively leading teams as a Scrum Master, balancing iterative development 
+            with structured planning to achieve project goals and ensure successful outcomes. 
           </p>
-          <a href="#" class="btn">Read More</a>
         </div>
 
-        <div class="experience-box">
-          <i class="bx bxs-paint"></i>
-          <h3>Graphic Design</h3>
+        <div class="skills-box">
+          <i class='bx bx-windows'></i>
+          <h3>Software</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
-            placeat quas velit adipisci iusto labore, cupiditate asperiores
-            dolor dolore quam!
+            Proficient in Java, Python, HTML/CSS, SQL, APIs, SDKs, and various programming 
+            languages. Experienced with Microsoft Project, Jira, Monday.com, Smartsheet, 
+            Salesforce, and other software tools.
           </p>
-          <a href="#" class="btn">Read More</a>
         </div>
       </div>
     </section>
@@ -219,46 +319,6 @@
       </div>
     </section>
 
-    <!--certification section-->
-    <section class="certification" id="certification">
-      <div class="certification-container">
-        <h2 class="heading">My <span>Certifications</span></h2>
-
-        <div class="certification-wrapper">
-          <div class="certification-box mySwiper">
-            <div class="certification-content swiper-wrapper">
-              <div class="certification-slide swiper-slide">
-                <img
-                  id="pmp-details"
-                  src="assets/pmp.png"
-                  alt="PMP Certificate"
-                />
-                <h3>Project Management Professional</h3>
-                <button class="btn" onclick="openModal('assets/pmp_cert.png')">
-                  View More
-                </button>
-              </div>
-
-              <div class="certification-slide swiper-slide">
-                <img
-                  id="csm-details"
-                  src="assets/csm.png"
-                  alt="CSM Certificate"
-                />
-                <h3>Certified Scrum Master</h3>
-                <button class="btn" onclick="openModal('assets/csm_cert.png')">
-                  View More
-                </button>
-              </div>
-            </div>
-
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Modal Structure -->
     <div id="modal" class="modal">

@@ -104,7 +104,7 @@ ScrollReveal().reveal('.home-content, .heading', {
   origin: 'top'
 });
 
-ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .certification-wrapper', {
+ScrollReveal().reveal('.home-img img, .experience_container, .timeline, .certification-container, .certification-wrapper, .skills-container, portfolio-container, .portfolio-box', {
   origin: 'bottom'
 });
 
