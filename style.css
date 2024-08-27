@@ -118,8 +118,8 @@ body {
 }
 
 section {
-    min-height: calc(100vh - 15rem); 
-    padding: 10rem 7% 2rem;
+  min-height: calc(100vh - 15rem);
+  padding: 10rem 7% 2rem;
 }
 
 /* HOME */
@@ -363,7 +363,7 @@ span {
   content: "";
   position: absolute;
   width: 6px;
-  height: 100%;
+  height: 85%;
   background: var(--gray-color);
   top: 0;
   left: 50%;
@@ -373,7 +373,7 @@ span {
 }
 
 .experience_container {
-  padding: 10px 50px;
+  padding: 10px;
   position: relative;
   width: 50%;
   animation: movedown 1s linear forwards;
@@ -431,10 +431,14 @@ span {
 
 .left-container {
   left: 0;
+  padding-right: 50px;
+  padding-left: 15%;
 }
 
 .right-container {
   left: 50%;
+  padding-right: 15%;
+  padding-left: 50px;
 }
 
 .right-container img {
@@ -532,12 +536,12 @@ span {
 }
 
 .certification-container {
-    padding: 2rem 3rem; /* Adjusted padding */
-  }
-  
-  .certification-wrapper {
-    padding: 2rem; /* Adjusted padding */
-  }
+  padding: 2rem 3rem; /* Adjusted padding */
+}
+
+.certification-wrapper {
+  padding: 2rem; /* Adjusted padding */
+}
 
 .certification-wrapper .certification-box {
   padding: 1rem;
@@ -625,8 +629,8 @@ span {
 
 .skills-container .skills-box {
   flex: 1 1 30rem;
-  width: 30rem; 
-  height:36rem;
+  width: 30rem;
+  height: 36rem;
   background: var(--bg-color);
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
@@ -664,9 +668,8 @@ span {
 }
 
 .skills h2 {
-    margin-bottom: 5rem;
-  }
-  
+  margin-bottom: 5rem;
+}
 
 /* PORTFOLIO */
 .portfolio {
@@ -683,23 +686,32 @@ span {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2rem;
-  max-width: 1200px; 
-  height: auto; 
-  margin: 0 auto; 
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
 }
-
 
 .portfolio-container .portfolio-box {
   position: relative;
   display: flex;
+  align-items: center; /* Center image vertically */
+  justify-content: center; /* Center image horizontally */
   border-radius: 2rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
-
+  width: 100%; /* Adjusts width based on grid item */
+  padding-top: 100%; /* Maintains aspect ratio (1:1) */
+  position: relative; /* Ensures absolute positioning of the image is relative to this container */
 }
 
 .portfolio-box img {
+  position: absolute; /* Ensures the image is positioned relative to the container */
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: fill; /* Fit image within the container while preserving aspect ratio */
+  object-position: center; /* Center the image within the container */
   transition: 0.5s ease;
 }
 
@@ -998,10 +1010,17 @@ span {
 
   .home .profession-container .profession-box {
     position: fixed;
-    top: 60%;
+    top: 20%;
     left: 0;
     border-radius: 0;
     width: 100%;
+  }
+
+  .home .profession-box .profession {
+    padding: 0 13px;
+    left: auto;
+    transform-origin: 0;
+    background: transparent;
   }
 
   .home .profession-box .profession:nth-child(1) {
@@ -1024,7 +1043,7 @@ span {
     transform: rotate(180deg) translate(-220px, -335px);
   }
 
-  .home .portfolio-box .circle {
+  .home .profession-box .circle {
     position: fixed;
     width: 670px;
     height: 670px;
