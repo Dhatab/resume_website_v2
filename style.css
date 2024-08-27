@@ -190,8 +190,8 @@ section {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  width: 768px;
-  height: 768px;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   pointer-events: none;
 }
@@ -201,12 +201,11 @@ section {
   top: 0;
   right: 0;
   width: 768px;
-  height: 768px;
-  border-radius: 50%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: professionRotate 12s ease-out infinite;
+  animation: professionRotate 13s ease-out infinite;
 }
 
 @keyframes professionRotate {
@@ -296,9 +295,9 @@ section {
   right: 0;
   width: 0;
   height: 0;
-  border-top: 384px solid var(--main-color);
+  border-top: 50vh solid var(--main-color);
   border-right: 384px solid var(--main-color);
-  border-bottom: 384px solid var(--main-color);
+  border-bottom: 50vh solid var(--main-color);
   border-left: 384px solid transparent;
 }
 
@@ -326,7 +325,6 @@ span {
 
 .about-img img {
   width: 20vw;
-  padding-top: 2rem;
   border-bottom-left-radius: 15rem;
   border-top-right-radius: 15rem;
   border: 5px solid var(--main-color); /* Adjust border width and color */
@@ -1057,6 +1055,11 @@ span {
     right: 0;
     transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
     border-width: 23.9rem;
+  }
+
+  .home .profession-box .circle,
+  .home .profession-box .profession {
+    display: none;
   }
 
   .about {
