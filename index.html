@@ -1,365 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Hatab Portfolio</title>
 
-    <!-- custom css-->
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Hatab Portfolio</title>
 
-    <!--box icon-->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <!-- Favicon Link -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
-    <script
-      src="https://kit.fontawesome.com/53edce4263.js"
-      crossorigin="anonymous"
-    ></script>
+  <!-- custom css-->
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- swiper css -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-  </head>
-  <body>
-    <!--header design-->
-    <header class="header">
-      <a href="#" class="logo">DH</a>
+  <!--box icon-->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#certification">Certifications</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-      </nav>
+  <script src="https://kit.fontawesome.com/53edce4263.js" crossorigin="anonymous"></script>
 
-      <div class="bx bx-moon" id="darkMode-icon"></div>
-      <div class="bx bx-menu" id="menu-icon"></div>
-    </header>
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
 
-    <!--home section-->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>Hello, I am</h3>
-        <h1>Dan Hatab!</h1>
+<body>
+  <!--header design-->
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="assets/white_logo.png" alt="">
+    </a>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#certification">Certifications</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+    </nav>
 
-        <div class="social-media">
-          <a href="https://github.com/dhatab" target="_blank">
-            <i class="bx bxl-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/danhatab/" target="_blank">
-            <i class="bx bxl-linkedin"></i>
-          </a>
-          <a href="mailto:danhatab@gmail.com">
-            <i class='bx bx-envelope'></i>
-          </a>
-        </div>
+    <div class="bx bx-moon" id="darkMode-icon"></div>
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
 
-        <a href="assets/pdf_resume.pdf" class="btn" download="Dan_Hatab_Resume.pdf">Download CV</a>
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, I am</h3>
+      <h1>Dan Hatab!</h1>
+  
+      <div class="social-media">
+        <a href="https://github.com/dhatab" target="_blank">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/danhatab/" target="_blank">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+        <a href="mailto:danhatab@gmail.com">
+          <i class='bx bx-envelope'></i>
+        </a>
       </div>
-
-     <!-- Design of Spinner  -->
+  
+      <a href="assets/pdf_resume.pdf" class="btn" download="Dan_Hatab_Resume.pdf">Download CV</a>
+    </div>
+  
+    <div class="home">
       <div class="profession-container">
-        <div class="profession-box">
-          <div class="profession" style="--i:0;">
-            <i class="fa-solid fa-user-tie"></i>
-            <h3>Professional Manager</h3>
-          </div>
-
-          <div class="profession" style="--i:1; ">
-            <i class="bx bx-brain"></i>
-            <h3>Engineer</h3>
-          </div>
-
-          <div class="profession" style="--i:2;" >
-            <i class="fa-regular fa-handshake"></i>
-            <h3>Leader & Entrepreneur</h3>
-          </div>
-
-          <div class="profession" style="--i:3;">
-            <i class="fa-solid fa-arrow-rotate-left"></i>
-            <h3>Scrum Master</h3>
-          </div>
-
-          <div class="circle"></div>
-        </div>
-
-        <div class="overlay"></div>
-      </div>
-    </section>
-
-    <!--about section-->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="assets/profile_picture.jpeg" alt="" />
-      </div>
-
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Hi, I'm Here To Help Your Next Project!</h3>
-        <p>
-          With extensive experience as a project manager and certifications as a Project Management 
-          Professional (PMP) and Certified ScrumMaster (CSM), I have developed expertise across 
-          diverse fields including construction, telecommunications, engineering, software, 
-          and technology. As a servant leader, I leverage strong communication skills, 
-          adept problem-solving abilities, and quick decision-making to drive project success 
-          and support my team's achievements.
-    </section>
+        <div class="rotating-text"><p>
+          <span class="word w-1">Professional.</span>
+          <span class="word w-2">Manager.</span>
+          <span class="word w-3">Engineer.</span>
+          <span class="word w-4">Leader.</span>
+          <span class="word w-5">Entrepunear.</span> 
+        </p> 
     
-    <!-- experience section -->
-    <section class="experience" id="experience">  
-      <h2 class="heading">My <span>Experience</span></h2>
-      <div class="timeline">
-        <div class="experience_container left-container">
-          <img src="assets/ramapo.png" alt="">
-          <div class="experience_textbox">
-            <h2>Ramapo Communication Corp</h2>
-            <h3>Sr. Project Manager</h3>
-            <small>Apr. 2018- Jan. 2024</small>
-            <span class="left-container-arrow"></span>
-          </div>
-        </div>
-
-        <div class="experience_container right-container">
-          <img src="assets/ramapo.png" alt="">
-          <div class="experience_textbox">
-            <h2>Ramapo Communication Corp</h2>
-            <h3>Assistant Project Manager </h3>
-            <small>Aug. 2016- Apr. 2018</small>
-            <span class="right-container-arrow"></span>
-          </div>
-        </div>
-
-        <div class="experience_container left-container">
-          <img src="assets/amazix.png" alt="">
-          <div class="experience_textbox">
-            <h2>Amazix</h2>
-            <h3>Community Manager</h3>
-            <small>June 2017- Oct. 2017</small>
-            <span class="left-container-arrow"></span>
-          </div>
-        </div>
-
-        <div class="experience_container right-container">
-          <img src="assets/heycoinbot.png" alt="">
-          <div class="experience_textbox">
-            <h2>HeyCoinBot</h2>
-            <h3>Android Developer</h3>
-            <small>Feb. 2016 - July 2016</small>
-            <span class="right-container-arrow"></span>
-          </div>
-        </div>
-
-        <div class="experience_container left-container">
-          <img src="assets/wvu.png" alt="">
-          <div class="experience_textbox">
-            <h2>West Virginia University</h2>
-            <h3>Bachelor of Science in Aerospace Engineering</h3>
-            <small>Jan. 2011- Dec. 2015</small>
-            <span class="left-container-arrow"></span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!--certification section-->
-    <section class="certification" id="certification">
-      <h2 class="heading">My <span>Certifications</span></h2>
-      <div class="certification-container">
-        <div class="certification-wrapper">
-          <div class="certification-box mySwiper">
-            <div class="certification-content swiper-wrapper">
-              <div class="certification-slide swiper-slide">
-                <img
-                  id="pmp-details"
-                  src="assets/pmp.png"
-                  alt="PMP Certificate"
-                />
-                <h3>Project Management Professional</h3>
-                <button class="btn" onclick="openModal('assets/pmp_cert.png')">
-                  View More
-                </button>
-              </div>
-
-              <div class="certification-slide swiper-slide">
-                <img
-                  id="csm-details"
-                  src="assets/csm.png"
-                  alt="CSM Certificate"
-                />
-                <h3>Certified Scrum Master</h3>
-                <button class="btn" onclick="openModal('assets/csm_cert.png')">
-                  View More
-                </button>
-              </div>
-            </div>
-
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
         </div>
       </div>
-    </section>
-
-    <!--skills section-->
-    <section class="skills" id="skills">
-      <h2 class="heading">My <span>Skills</span></h2>
-
-      <div class="skills-container">
-        <div class="skills-box">
-          <i class='bx bx-list-ul'></i>
-          <h3>Management</h3>
-          <p>
-            Expertise in leading teams, managing resources, and mitigating risks to deliver high-quality results on 
-            time and within budget. Focused on effective communication, stakeholder engagement, 
-            and adaptive problem-solving to drive organizational growth and client satisfaction.
-          </p>
-        </div>
-
-        <div class="skills-box">
-          <i class="bx bx-bar-chart-alt"></i>
-          <h3>Methodologies</h3>
-          <p>
-            Experienced in both traditional and agile methodologies, 
-            effectively leading teams as a Scrum Master, balancing iterative development 
-            with structured planning to achieve project goals and ensure successful outcomes. 
-          </p>
-        </div>
-
-        <div class="skills-box">
-          <i class='bx bx-windows'></i>
-          <h3>Software</h3>
-          <p>
-            Proficient in Java, Python, HTML/CSS, SQL, APIs, SDKs, and various programming 
-            languages. Experienced with Microsoft Project, Jira, Monday.com, Smartsheet, 
-            Salesforce, and other software tools.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!--portfolio section-->
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">My <span>Portfolio</span></h2>
-
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-          <img src="assets/companies.png" alt="" />
-
-          <div class="portfolio-layer">
-            <h4>Communications</h4>
-            <p>Over 300 projects installing telecommuncation products, software, 
-              infastructure and LTE networks for T-Mobile, AT&T, Verizon, Sprint and Ericsson.
-            </p>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="assets/cell-tower.jpg" alt="" />
-
-          <div class="portfolio-layer">
-            <h4>Construction</h4>
-            <p>$5M annually in construction project work, including concrete pouring, 
-              aerial construction, mounts and structural installations, electrical wiring, 
-              decommissioning and fiber and utility directional drilling.
-            </p>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="assets/heycoinbot.png" alt="" />
-          <div class="portfolio-layer">
-            <h4>HeyCoinBot</h4>
-            <p>Messaging bot on Telegram that provides the latest 
-              information on a cryptocurrency.</p>
-            <a href="https://heycoinbot.xyz/" target="_blank">
-              <i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="assets/crypto_callback.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Crypto Callback</h4>
-            <p>Android Application developed to provide up-to-date cryptocurrency prices, 
-              charts and data.</p>
-            <a href="https://github.com/Dhatab/CryptoCallbackApp" target="_blank">
-              <i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="assets/nba_bot.png" alt="" />
-          <div class="portfolio-layer">
-            <h4>Sports Bot</h4>
-            <p>Personal Hobby - A bot used to provide users with 
-              basic information from NBA including stats, schedule and standings </p>
-            <a href="https://github.com/Dhatab/SportsBot" target="_blank">
-              <i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="assets/ai_bot.png" alt="" />
-          <div class="portfolio-layer">
-            <h4>AI Messaging Bot</h4>
-            <p>Personal Hobby - A bot used to have conversations with Googles AI bot, know 
-              as 'Gemini'. </p>
-            <a href="https://github.com/Dhatab/Gemini_Telegram_Bot" target="_blank">
-              <i class="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-    </section>
-
-
-    <!-- Modal Structure -->
-    <div id="modal" class="modal">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <img class="modal-content" id="modal-image" />
     </div>
 
-    <script>
-      function toggleImage(imageId) {
-        var image = document.getElementById(imageId);
-        if (image.style.display === "none") {
-          image.style.display = "block";
-        } else {
-          image.style.display = "none";
-        }
+    
+  </section>
+
+  <!--about section-->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="assets/profile_picture.jpeg" alt="" />
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>Hi, I'm Here To Help Your Next Project!</h3>
+      <p>
+        With extensive experience as a project manager and certifications as a Project Management
+        Professional (PMP) and Certified ScrumMaster (CSM), I have developed expertise across
+        diverse fields including construction, telecommunications, engineering, software,
+        and technology. As a servant leader, I leverage strong communication skills,
+        adept problem-solving abilities, and quick decision-making to drive project success
+        and support my team's achievements.
+  </section>
+
+  <!-- experience section -->
+  <section class="experience" id="experience">
+    <h2 class="heading">My <span>Experience</span></h2>
+    <div class="timeline">
+      <div class="experience_container left-container">
+        <img src="assets/ramapo.png" alt="">
+        <div class="experience_textbox">
+          <h2>Ramapo Communication Corp</h2>
+          <h3>Sr. Project Manager</h3>
+          <small>Apr. 2018- Jan. 2024</small>
+          <span class="left-container-arrow"></span>
+        </div>
+      </div>
+
+      <div class="experience_container right-container">
+        <img src="assets/ramapo.png" alt="">
+        <div class="experience_textbox">
+          <h2>Ramapo Communication Corp</h2>
+          <h3>Assistant Project Manager </h3>
+          <small>Aug. 2016- Apr. 2018</small>
+          <span class="right-container-arrow"></span>
+        </div>
+      </div>
+
+      <div class="experience_container left-container">
+        <img src="assets/amazix.png" alt="">
+        <div class="experience_textbox">
+          <h2>Amazix</h2>
+          <h3>Community Manager</h3>
+          <small>June 2017- Oct. 2017</small>
+          <span class="left-container-arrow"></span>
+        </div>
+      </div>
+
+      <div class="experience_container right-container">
+        <img src="assets/heycoinbot.png" alt="">
+        <div class="experience_textbox">
+          <h2>HeyCoinBot</h2>
+          <h3>Android Developer</h3>
+          <small>Feb. 2016 - July 2016</small>
+          <span class="right-container-arrow"></span>
+        </div>
+      </div>
+
+      <div class="experience_container left-container">
+        <img src="assets/wvu.png" alt="">
+        <div class="experience_textbox">
+          <h2>West Virginia University</h2>
+          <h3>Bachelor of Science in Aerospace Engineering</h3>
+          <small>Jan. 2011- Dec. 2015</small>
+          <span class="left-container-arrow"></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--certification section-->
+  <section class="certification" id="certification">
+    <h2 class="heading">My <span>Certifications</span></h2>
+    <div class="certification-container">
+      <div class="certification-wrapper">
+        <div class="certification-box mySwiper">
+          <div class="certification-content swiper-wrapper">
+            <div class="certification-slide swiper-slide">
+              <img id="pmp-details" src="assets/pmp.png" alt="PMP Certificate" />
+              <h3>Project Management Professional</h3>
+              <button class="btn" onclick="openModal('assets/pmp_cert.png')">
+                View More
+              </button>
+            </div>
+
+            <div class="certification-slide swiper-slide">
+              <img id="csm-details" src="assets/csm.png" alt="CSM Certificate" />
+              <h3>Certified Scrum Master</h3>
+              <button class="btn" onclick="openModal('assets/csm_cert.png')">
+                View More
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--skills section-->
+  <section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+
+    <div class="skills-container">
+      <div class="skills-box">
+        <i class='bx bx-list-ul'></i>
+        <h3>Management</h3>
+        <p>
+          Expertise in leading teams, managing resources, and mitigating risks to deliver high-quality results on
+          time and within budget. Focused on effective communication, stakeholder engagement,
+          and adaptive problem-solving to drive organizational growth and client satisfaction.
+        </p>
+      </div>
+
+      <div class="skills-box">
+        <i class="bx bx-bar-chart-alt"></i>
+        <h3>Methodoliges</h3>
+        <p>
+          Experienced in both traditional and agile methodologies,
+          effectively leading teams as a Scrum Master, balancing iterative development
+          with structured planning to achieve project goals and ensure successful outcomes.
+        </p>
+      </div>
+
+      <div class="skills-box">
+        <i class='bx bx-windows'></i>
+        <h3>Software</h3>
+        <p>
+          Proficient in Java, Python, HTML/CSS, SQL, APIs, SDKs, and various programming
+          languages. Experienced with Microsoft Project, Jira, Monday.com, Smartsheet,
+          Salesforce, and other software tools.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--portfolio section-->
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">My <span>Portfolio</span></h2>
+
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="assets/companies.png" alt="" />
+
+        <div class="portfolio-layer">
+          <h4>Communications</h4>
+          <p>Over 300 projects installing telecommuncation products, software,
+            infastructure and LTE networks for T-Mobile, AT&T, Verizon, Sprint and Ericsson.
+          </p>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="assets/cell-tower.jpg" alt="" />
+
+        <div class="portfolio-layer">
+          <h4>Construction</h4>
+          <p>$5M annually in construction project work, including concrete pouring,
+            aerial construction, mounts and structural installations, electrical wiring,
+            decommissioning and fiber and utility directional drilling.
+          </p>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="assets/heycoinbot.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>HeyCoinBot</h4>
+          <p>Messaging bot on Telegram that provides the latest
+            information on a cryptocurrency.</p>
+          <a href="https://heycoinbot.xyz/" target="_blank">
+            <i class="bx bx-link-external"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="assets/crypto_callback.jpg" alt="" />
+        <div class="portfolio-layer">
+          <h4>Crypto Callback</h4>
+          <p>Android Application developed to provide up-to-date cryptocurrency prices,
+            charts and data.</p>
+          <a href="https://github.com/Dhatab/CryptoCallbackApp" target="_blank">
+            <i class="bx bx-link-external"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="assets/nba_bot.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Sports Bot</h4>
+          <p>Personal Hobby - A bot used to provide users with
+            basic information from NBA including stats, schedule and standings </p>
+          <a href="https://github.com/Dhatab/SportsBot" target="_blank">
+            <i class="bx bx-link-external"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="assets/ai_bot.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>AI Messaging Bot</h4>
+          <p>Personal Hobby - A bot used to have conversations with Googles AI bot, know
+            as 'Gemini'. </p>
+          <a href="https://github.com/Dhatab/Gemini_Telegram_Bot" target="_blank">
+            <i class="bx bx-link-external"></i>
+          </a>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- Modal Structure -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-image" />
+  </div>
+
+  <script>
+    function toggleImage(imageId) {
+      var image = document.getElementById(imageId);
+      if (image.style.display === "none") {
+        image.style.display = "block";
+      } else {
+        image.style.display = "none";
       }
-    </script>
+    }
+  </script>
 
-    <!--footer section-->
-    <footer class="footer">
-      <div class="footer-text">
-        <p>Copyright &copy; 2024 by Daniel Hatab | Made with HTML/CSS</p>
-      </div>
+  <!--footer section-->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2024 by Daniel Hatab | Made with HTML/CSS</p>
+    </div>
 
-      <div class="footer-iconTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-      </div>
-    </footer>
+    <div class="footer-iconTop">
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </footer>
 
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- custom js-->
-    <script src="scripts.js"></script>
-  </body>
+  <!-- custom js-->
+  <script src="scripts.js"></script>
+</body>
+
 </html>
